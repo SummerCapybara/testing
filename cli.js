@@ -1,4 +1,4 @@
-const socket = io("https://hypolimnetic-tobie-unplayed.ngrok-free.dev");
+const socket = io("https://curious-lollipop-28a5d7.netlify.app");
 
 const input = document.querySelector(".in");
 const b = document.querySelector(".button");
@@ -17,4 +17,5 @@ socket.on("messageRecieved", (msg) => {
     let li = document.createElement("li");
     li.textContent = msg;
     ul.appendChild(li);
+
 });
